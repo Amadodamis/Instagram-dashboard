@@ -1,6 +1,26 @@
+.style-header{
+ margin: 5px;
+}
+
+.banner{
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid #C00;
+    display: flex;
+    justify-content: space-between;
+}
+
 .container-img{
    width: 120px;
    height: 40px; 
+}
+
+.container-logo-analytics{
+    display: flex;
+}
+.Contlogo{
+    font-family: 'Pacifico', cursive;
+    font-size: 15px;
 }
 
 .logo{

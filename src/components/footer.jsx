@@ -1,7 +1,7 @@
 function Footer() { 
     return (
       <footer>
-          <p>hola!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+          <p>Soy un footer</p>
       </footer>
     );
   }

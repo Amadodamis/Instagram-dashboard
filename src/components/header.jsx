@@ -2,14 +2,38 @@ import logoIg from '../img/instagram_logo.png'
 import '../css/header.css';
 
 
-function Header() { 
-    return (
-        <header>
-            <div className='container-img'>
-            <img src={logoIg} className="logo" alt="logo"/>
-            </div>
-      </header>
-    );
-  }
-  
-  export default Header;
+function Header() {
+  return (
+    <header className='style-header'>
+      <div className='banner'>
+
+        <div className='container-logo-analytics'>
+          <div className='container-img'>
+            <img src={logoIg} className="logo" alt="logo" />
+          </div>
+          <p className='Contlogo'>Analytics</p>
+
+        </div>
+
+        <div>
+          <label className='toggle-modo-oscuro'>
+            <input type="radio" name="modo-oscuro" value="ENG" />
+            modo oscuro
+            <input type="radio" name="modo-oscuro" value="ESP" checked />
+            modo claro
+          </label>
+
+          <label className='toogle-idioma'>
+            <input type="radio" name="idioma" value="ENG" />
+            ENG
+            <input type="radio" name="idioma" value="ESP" checked />
+            ESP
+          </label>
+        </div>
+
+      </div>
+    </header>
+  );
+}
+
+export default Header;
