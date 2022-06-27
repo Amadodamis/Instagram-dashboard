@@ -4,27 +4,43 @@ import fotouser from '../img/fotouser.png'
 function Body() {
   return (
     <body className="body">
-      <section className="seccion1">
-        <h3>Buscar ID de usuario por Link </h3>
-        <input type="search" />
-        <br />
-        <input type="submit" />
-        <br />
-        <div className='container-fotouser'>
-          <img src={fotouser} className="foto-user" alt="user" />
+
+      <section className="container-buscar-user">
+        <p className='title-buscar-user'>Buscar ID de usuario por Link </p>
+        <div className='box-search-submit'>
+          <input type="search" />
+          <input type="submit" />
         </div>
+
+        <article className='container-info-user-article'>
+
+          <div className='container-fotouser'>
+            <img src={fotouser} className="foto-user" alt="user" />
+          </div>
+
+          <div className='container-info-user'>
+            <ul className='ul-style'>
+              <li><p>Nombre user:---</p></li>
+              <li> <p>Siguiendo:--- </p></li>
+              <li> <p>Seguidores:---</p></li>
+              <li> <p>Creacion instagram:---</p></li>
+            </ul>
+          </div>
+
+        </article>
+
       </section>
 
-      <section className="seccion2">
-        <article className='articles'>
+      <section className="data-analitycs">
+        <article className='article1'>
           <p className='title'>Usuarios que seguis y no te siguen</p>
 
         </article>
-        <article className='articles'>
+        <article className='article2'>
           <p className='title'>Usuarios que no seguis y te siguen</p>
 
         </article>
-        <article className='articles'>
+        <article className='article3'>
           <p className='title'>Usuarios que te dejaron de seguir desde la fecha : "*fecha*"</p>
         </article>
       </section>

@@ -1,11 +1,9 @@
 .style-header{
- margin: 5px;
+ margin: 0px;
 }
 
 .banner{
-    margin-left: 10px;
-    margin-right: 10px;
-    border: 2px solid #C00;
+    background-color: #233138;
     display: flex;
     justify-content: space-between;
 }
@@ -21,6 +19,8 @@
 .Contlogo{
     font-family: 'Pacifico', cursive;
     font-size: 15px;
+    margin: 0px;
+    margin-top:8px;
 }
 
 .logo{

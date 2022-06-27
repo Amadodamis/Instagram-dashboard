@@ -14,7 +14,7 @@ function Header() {
           <p className='Contlogo'>Analytics</p>
 
         </div>
-
+        
         <div>
           <label className='toggle-modo-oscuro'>
             <input type="radio" name="modo-oscuro" value="ENG" />

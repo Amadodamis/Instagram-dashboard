@@ -1,4 +1,6 @@
 .App-main {
   height: 100%;
   width: 100%;
+  background: rgb(12,19,23);
+  background: linear-gradient(0deg, rgba(12,19,23,1) 0%, rgba(17,27,33,1) 100%);
 }

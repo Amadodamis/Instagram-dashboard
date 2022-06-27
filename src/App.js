@@ -12,9 +12,13 @@ function App() {
   return (
     <div className="App">
       <main className="App-main">
+        <br />
         <Header />
+        <br />
         <Body />
+        <br />
         <Footer />
+        <br />
       </main>
     </div>
   );
