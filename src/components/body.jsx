@@ -1,5 +1,7 @@
 import '../css/body.css';
 import fotouser from '../img/fotouser.png'
+import angle from '../icon/angle-left.svg'
+
 
 function Body() {
   return (
@@ -34,7 +36,26 @@ function Body() {
       <section className="data-analitycs">
         <article className='article1'>
           <p className='title'>Usuarios que seguis y no te siguen</p>
+          <div className='list-users'>
+            <ul className='ul-style'>
+              <li><img src={fotouser} className="avatar-user" alt="userx" /> <a href="https://www.instagram.com/">Hardcoded user</a></li>
+              <li><img src={fotouser} className="avatar-user" alt="userx" /> <a href="https://www.instagram.com/">Hardcoded user</a></li>
+              <li><img src={fotouser} className="avatar-user" alt="userx" /> <a href="https://www.instagram.com/">Hardcoded user</a></li>
+              <li><img src={fotouser} className="avatar-user" alt="userx" /> <a href="https://www.instagram.com/">Hardcoded user</a></li>
+              <li><img src={fotouser} className="avatar-user" alt="userx" /> <a href="https://www.instagram.com/">Hardcoded user</a></li>
+              <li><img src={fotouser} className="avatar-user" alt="userx" /> <a href="https://www.instagram.com/">Hardcoded user</a></li>
+              <li><img src={fotouser} className="avatar-user" alt="userx" /> <a href="https://www.instagram.com/">Hardcoded user</a></li>
+              <li><img src={fotouser} className="avatar-user" alt="userx" /> <a href="https://www.instagram.com/">Hardcoded user</a></li>
+              <li><img src={fotouser} className="avatar-user" alt="userx" /> <a href="https://www.instagram.com/">Hardcoded user</a></li>
+              <li><img src={fotouser} className="avatar-user" alt="userx" /> <a href="https://www.instagram.com/">Hardcoded user</a></li>
+              
+            </ul>
 
+          </div>
+          <div className='container-angles'>
+            <img src={angle} className="icon-left" alt="logo" />
+            <img src={angle} className="icon-right" alt="logo" />
+          </div>
         </article>
         <article className='article2'>
           <p className='title'>Usuarios que no seguis y te siguen</p>
