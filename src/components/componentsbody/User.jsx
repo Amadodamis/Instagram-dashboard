@@ -13,10 +13,10 @@ function dataAnalytics(props) {
 
           <div className='container-info-user'>
             <ul className='ul-style'>
-              <li><p>Nombre user:---</p></li>
-              <li> <p>Siguiendo:--- </p></li>
-              <li> <p>Seguidores:---</p></li>
-              <li> <p>Creacion instagram:---</p></li>
+              <li><p className='Datos-user'>Nombre user: Amado Damis</p></li>
+              <li> <p className='Datos-user'>Siguiendo: 200 </p></li>
+              <li> <p className='Datos-user'>Seguidores: 200</p></li>
+              <li> <p className='Datos-user'>Creacion instagram: 20/12/2022</p></li>
             </ul>
           </div>
 

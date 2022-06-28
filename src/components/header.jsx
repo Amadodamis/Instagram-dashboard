@@ -1,4 +1,5 @@
-import logoIg from '../img/instagram_logo.png'
+import logoIgWhite from '../img/instagram_logo_white.png'
+import logoIgBlack from '../img/instagram_logo_black.png'
 import '../css/header.css';
 
 
@@ -9,7 +10,7 @@ function Header() {
 
         <div className='container-logo-analytics'>
           <div className='container-img'>
-            <img src={logoIg} className="logo" alt="logo" />
+            <img src={logoIgBlack} className="logo" alt="logo" />
           </div>
           <p className='Contlogo'>Analytics</p>
 

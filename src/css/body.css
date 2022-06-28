@@ -22,21 +22,50 @@
     text-align: center;
 }
 
-.box-search-submit {
+.container-search {
     margin-left: 5px;
     display: flex;
-    justify-content: left;
+    align-items: center;
+    justify-content: center;
 }
 
+form {
+background:#fff ;
+width: 300px;
+height: 40px;
+display: flex;
+
+}
+
+.input-search {
+flex:1;
+border: none;
+outline:none;
+}
+
+
+.button-search {
+background:#04CF9C;
+padding:0px 20px;
+border:none;
+outline:none;
+color:#fff;
+letter-spacing:1px;
+cursor:pointer;
+}
 
 .title {
     font-size: 8px;
 }
 
+.Datos-user{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
 
 .container-fotouser {
- width: 200px;
- height:275px;
+    width: 200px;
+    height: 275px;
 }
 
 .foto-user {
@@ -44,15 +73,21 @@
     height: 100%;
 }
 
-.container-info-user {
-
-}
 
 .container-info-user-article {
     display: flex;
     margin: 0px;
     margin-top: 5px;
     height: 300px;
+}
+
+
+.a-usuario{
+    margin-left: 10px;   
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -77,7 +112,34 @@
     margin: 5px;
     height: 95%;
     border: 1px solid #687780;
+    
 }
+
+.container-ant-sig{
+    height: 7%;
+    flex-grow: 1;
+    margin:0px;
+}
+
+.list-users {
+    text-align: center;
+    height: 78%;
+}
+
+.container-p{
+    height: 15%;
+}
+
+.button-prev-next{
+    background:#04CF9C;
+    width: 50%;
+    height: 30px;
+    border:none;
+    outline:none;
+    color:#fff;
+    letter-spacing:1px; 
+}
+
 
 .article2 {
     margin: 5px;
@@ -95,31 +157,22 @@
     font-size: 25px;
 }
 
-.container-angles{
-height: 10px;
-width: 10px;
-display: flex;
-float:right;
-margin-right: 15px;
-}
 
-.icon-left{
+
+.icon-left {
     width: 100%;
     height: 100%;
 }
 
-.icon-right{
+.icon-right {
     width: 100%;
     height: 100%;
-    transform:rotate(180deg)
+    transform: rotate(180deg)
 }
 
-.avatar-user{
+.avatar-user {
     height: 30px;
     width: 30px;
-    border-radius: 50%
+    border-radius:50%
 }
 
-.list-users{
-    margin-left:10px;
-}

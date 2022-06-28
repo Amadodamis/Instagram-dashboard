@@ -16,9 +16,12 @@ function Body() {
 
       <section className="container-buscar-user">
         <p className='title-buscar-user'>Buscar ID de usuario por Link </p>
-        <div className='box-search-submit'>
-          <input type="search" />
-          <input type="submit" />
+        <div className='container-search'>
+           
+          <form action="">
+            <input type="text" placeholder='Ingrese link de usuario' className='input-search' />
+            <button type='submit' className='button-search'>Buscar</button>
+          </form>
         </div>
 
         <User fotouser={fotouser} />
