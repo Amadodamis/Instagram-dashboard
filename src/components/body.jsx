@@ -1,6 +1,13 @@
+import React from 'react';
 import '../css/body.css';
+
+//imports de archivos
 import fotouser from '../img/fotouser.png'
 import angle from '../icon/angle-left.svg'
+
+//imports de componentes
+import DataAnalitycs from './componentsbody/dataAnalitycs';
+import User from './componentsbody/User'
 
 
 function Body() {
@@ -14,57 +21,11 @@ function Body() {
           <input type="submit" />
         </div>
 
-        <article className='container-info-user-article'>
-
-          <div className='container-fotouser'>
-            <img src={fotouser} className="foto-user" alt="user" />
-          </div>
-
-          <div className='container-info-user'>
-            <ul className='ul-style'>
-              <li><p>Nombre user:---</p></li>
-              <li> <p>Siguiendo:--- </p></li>
-              <li> <p>Seguidores:---</p></li>
-              <li> <p>Creacion instagram:---</p></li>
-            </ul>
-          </div>
-
-        </article>
+        <User fotouser={fotouser} />
 
       </section>
 
-      <section className="data-analitycs">
-        <article className='article1'>
-          <p className='title'>Usuarios que seguis y no te siguen</p>
-          <div className='list-users'>
-            <ul className='ul-style'>
-              <li><img src={fotouser} className="avatar-user" alt="userx" /> <a href="https://www.instagram.com/">Hardcoded user</a></li>
-              <li><img src={fotouser} className="avatar-user" alt="userx" /> <a href="https://www.instagram.com/">Hardcoded user</a></li>
-              <li><img src={fotouser} className="avatar-user" alt="userx" /> <a href="https://www.instagram.com/">Hardcoded user</a></li>
-              <li><img src={fotouser} className="avatar-user" alt="userx" /> <a href="https://www.instagram.com/">Hardcoded user</a></li>
-              <li><img src={fotouser} className="avatar-user" alt="userx" /> <a href="https://www.instagram.com/">Hardcoded user</a></li>
-              <li><img src={fotouser} className="avatar-user" alt="userx" /> <a href="https://www.instagram.com/">Hardcoded user</a></li>
-              <li><img src={fotouser} className="avatar-user" alt="userx" /> <a href="https://www.instagram.com/">Hardcoded user</a></li>
-              <li><img src={fotouser} className="avatar-user" alt="userx" /> <a href="https://www.instagram.com/">Hardcoded user</a></li>
-              <li><img src={fotouser} className="avatar-user" alt="userx" /> <a href="https://www.instagram.com/">Hardcoded user</a></li>
-              <li><img src={fotouser} className="avatar-user" alt="userx" /> <a href="https://www.instagram.com/">Hardcoded user</a></li>
-              
-            </ul>
-
-          </div>
-          <div className='container-angles'>
-            <img src={angle} className="icon-left" alt="logo" />
-            <img src={angle} className="icon-right" alt="logo" />
-          </div>
-        </article>
-        <article className='article2'>
-          <p className='title'>Usuarios que no seguis y te siguen</p>
-
-        </article>
-        <article className='article3'>
-          <p className='title'>Usuarios que te dejaron de seguir desde la fecha : "*fecha*"</p>
-        </article>
-      </section>
+      <DataAnalitycs angle={angle} fotouser={fotouser} />
 
     </body>
   );
