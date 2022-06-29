@@ -4,8 +4,11 @@
     border-bottom: 1px solid #687780;
 }
 
-.Links-footerñ{
-    font-style: none;
+.Links-footer{
+    text-decoration: none;
+    color: white;
+    margin: 0px;
+    padding: 0px;
 }
 
 p{
@@ -13,4 +16,8 @@ p{
     margin: 0px;
     margin-left: 5px;
     color: white;
+}
+
+.container-links{
+    max-width: 10%;
 }
