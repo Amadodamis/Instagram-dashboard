@@ -1,12 +1,10 @@
 .footer{
-    background-color: #233138;
     border-top:1px solid #687780;
     border-bottom: 1px solid #687780;
 }
 
 .Links-footer{
     text-decoration: none;
-    color: white;
     margin: 0px;
     padding: 0px;
 }
@@ -15,7 +13,7 @@ p{
     font-size: 12px;
     margin: 0px;
     margin-left: 5px;
-    color: white;
+    
 }
 
 .container-links{

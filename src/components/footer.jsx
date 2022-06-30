@@ -1,5 +1,5 @@
 import '../css/footer.css';
-
+import '../css/App.css';
 let cv = "https://docs.google.com/document/d/1ijwQMEoZboJ1PKr8eO-NbcJm1FwuJqaPWepFb_ggaO4/edit?usp=sharing"
 let gh = "https://github.com/Amadodamis/"
 

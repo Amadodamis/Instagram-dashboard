@@ -1,6 +1,120 @@
 .App-main {
   height: 100%;
   width: 100%;
-  background: rgb(12,19,23);
+}
+
+#light{
+  background: linear-gradient(12deg, rgba(252,252,252,1) 0%, rgba(217,217,217,1) 30%)
+}
+
+#dark{
   background: linear-gradient(0deg, rgba(12,19,23,1) 0%, rgba(17,27,33,1) 100%);
+}
+
+/* Aca comienza el DARK MODE LIGHT MODE DEL HEADER  */
+
+#light .analitycs-p{
+  color: black;
+}
+
+#light .banner{
+  background-color: grey;
+}
+
+#dark .analitycs-p{
+  color: black;
+}
+
+#dark .banner{
+  background-color: #233138;
+}
+
+/* Aca comienza el DARK MODE LIGHT MODE DEL BODY  */
+
+#light .body{
+  background-color: grey;
+}
+
+#light .title-buscar-user{
+  color:black;
+}
+
+#light .button-search{
+  background:black;
+}
+
+#light .article1{
+  border: 1px solid black;
+}
+#light .article2{
+  border: 1px solid black;
+}
+#light .article3{
+  border: 1px solid black;
+}
+
+#light .title{
+  color:black;
+}
+
+#light .a-usuario{
+  color:black;
+}
+
+#light .button-prev-next{
+  background:black;
+}
+
+
+
+#dark .body{
+  background-color: #233138;
+}
+
+#dark .button-search{
+  background:#04CF9C;
+}
+
+#dark .article1{
+  border: 1px solid #687780
+}
+#dark .article2{
+  border: 1px solid #687780
+}
+#dark .article3{
+  border: 1px solid #687780
+}
+
+#dark .title{
+  color:white;
+}
+
+#dark .a-usuario{
+  color:white;
+}
+
+#dark .button-prev-next{
+  background:#04CF9C;
+}
+
+/* Aca comienza el DARK MODE LIGHT MODE DEL Footer  */
+
+#light .footer{
+  background-color:grey
+}
+#light .Links-footer{
+  color: white
+}
+#light p{
+  color: black;
+}
+
+#dark .footer{
+  background-color: #233138
+}
+#dark .Links-footer{
+  color: white
+}
+#dark p{
+  color: white;
 }

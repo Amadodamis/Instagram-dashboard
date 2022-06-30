@@ -5,7 +5,6 @@
 }
 
 .banner{
-    background-color: #233138;
     display: flex;
     justify-content: space-between;
 }
@@ -18,9 +17,8 @@
 .container-logo-analytics{
     display: flex;
 }
-.Contlogo{
+.analitycs-p{
     font-family: 'Pacifico', cursive;
-    color: black;
     font-size: 15px;
     margin: 0px;
     margin-top:8px;

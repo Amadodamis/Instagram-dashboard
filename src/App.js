@@ -1,50 +1,33 @@
-import { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import './css/App.css';
 import Header from "./components/header"
 import Footer from "./components/footer"
 import Body from "./components/body"
+import ReactSwitch from "react-switch"
+import { createContext } from 'react';
+
+export const ThemeContext =createContext(null)
+
 
 function App() {
-  const [theme, setTheme] = useState(["Modo Oscuro", "Modo Claro"])
-  const [idioma, setIdioma] = useState([])
 
-  useEffect(() => {
-    setTheme(["Modo Oscuro", "Modo Claro"])
-    setIdioma(["ESP", "ENG"])
-  }, [])
-
-
-  useEffect(() => {
-    console.log("Estamos en la etapa de actualizacion")
-  }, [theme, idioma])
-
-  const changeTheme = () => {
-    theme.reverse()
+  const [theme,setTheme] = useState("light")
+  const toggleTheme = ()=>{
+    setTheme ((curr)=> (curr ==="light" ? "dark" : "light"))
   }
 
   return (
-    <div className="App">
-      <main className="App-main">
-
-        <div>
-          <label className='toggle-modo-oscuro'>
-            <button onClick={changeTheme}>  {theme[0]} </button>
-          </label>
-
-          <label className='toogle-idioma'>
-            <button>{idioma[0]}</button>
-          </label>
-        </div>
-
+    <ThemeContext.Provider value={{theme,toggleTheme} } >
+      <div className="App-main" id={theme} >
         <Header />
         <br />
         <Body />
         <br />
         <Footer />
         <br />
-      </main>
-    </div>
+      </div>
+    </ThemeContext.Provider>
   );
 }
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/body.css';
+import '../css/App.css';
 
 //imports de archivos
 import fotouser from '../img/fotouser.png'
@@ -12,13 +13,13 @@ import User from './componentsbody/User'
 
 function Body() {
   return (
-    <body className="body">
+    <div className="body">
 
       <section className="container-buscar-user">
         <p className='title-buscar-user'>Buscar ID de usuario por Link </p>
-        <div className='container-search'>
-           
-          <form action="">
+        
+        <div className='container-search'> 
+          <form action="" className='form'>
             <input type="text" placeholder='Ingrese link de usuario' className='input-search' />
             <button type='submit' className='button-search'>Buscar</button>
           </form>
@@ -30,7 +31,7 @@ function Body() {
 
       <DataAnalitycs angle={angle} fotouser={fotouser} />
 
-    </body>
+    </div>
   );
 }
 

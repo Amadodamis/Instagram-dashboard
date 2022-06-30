@@ -1,5 +1,4 @@
-.body {
-    background-color: #233138;
+.body {   
     display: flex;
     justify-content: center;
     border-top: 1px solid #687780;
@@ -29,8 +28,7 @@
     justify-content: center;
 }
 
-form {
-background:#fff ;
+.form {
 width: 300px;
 height: 40px;
 display: flex;
@@ -45,7 +43,6 @@ outline:none;
 
 
 .button-search {
-background:#04CF9C;
 padding:0px 20px;
 border:none;
 outline:none;
@@ -131,7 +128,6 @@ cursor:pointer;
 }
 
 .button-prev-next{
-    background:#04CF9C;
     width: 50%;
     height: 30px;
     border:none;

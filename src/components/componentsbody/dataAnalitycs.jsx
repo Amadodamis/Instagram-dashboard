@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../css/body.css';
+import '../../css/App.css';
 import HardcodedUsers from './hardcodedUsers'
 
 let ant = "<< Anterior"
