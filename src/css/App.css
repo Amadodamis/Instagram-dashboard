@@ -1,8 +1,14 @@
 .App-main {
   height: 100%;
   width: 100%;
+
 }
 
+.switch{
+  text-align: right;
+}
+
+/* DARK MODE LIGHT MODE BODY AP*/
 #light{
   background: linear-gradient(12deg, rgba(252,252,252,1) 0%, rgba(217,217,217,1) 30%)
 }
