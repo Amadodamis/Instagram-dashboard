@@ -1,50 +1,30 @@
 import React from "react";
 import '../../css/App.css';
+import '../../css/body.css';
 
 function hardcodedUsers(props) {
+    /*
+    {array.map((user,i)=>{
+        return (
+            {user }   
+             )
+        })
+    }
+    
+    */
+
+
+    const { array, fotoUser } = props;
+    
+    console.log(array[0])
+
     return (
-        <React.Fragment>
-            <li>
-                <img src={props.fotouser} className="avatar-user" alt="userx" />
-                <a href="https://www.instagram.com/" className='a-usuario'>Hardcoded user</a>
-            </li>
-            <li>
-                <img src={props.fotouser} className="avatar-user" alt="userx" />
-                <a href="https://www.instagram.com/" className='a-usuario'>Hardcoded user</a>
-            </li>
-            <li>
-                <img src={props.fotouser} className="avatar-user" alt="userx" />
-                <a href="https://www.instagram.com/" className='a-usuario'>Hardcoded user</a>
-            </li>
-            <li>
-                <img src={props.fotouser} className="avatar-user" alt="userx" />
-                <a href="https://www.instagram.com/" className='a-usuario'>Hardcoded user</a>
-            </li>
-            <li>
-                <img src={props.fotouser} className="avatar-user" alt="userx" />
-                <a href="https://www.instagram.com/" className='a-usuario'>Hardcoded user</a>
-            </li>
-            <li>
-                <img src={props.fotouser} className="avatar-user" alt="userx" />
-                <a href="https://www.instagram.com/" className='a-usuario'>Hardcoded user</a>
-            </li>
-            <li>
-                <img src={props.fotouser} className="avatar-user" alt="userx" />
-                <a href="https://www.instagram.com/" className='a-usuario'>Hardcoded user</a>
-            </li>
-            <li>
-                <img src={props.fotouser} className="avatar-user" alt="userx" />
-                <a href="https://www.instagram.com/" className='a-usuario'>Hardcoded user</a>
-            </li>
-            <li>
-                <img src={props.fotouser} className="avatar-user" alt="userx" />
-                <a href="https://www.instagram.com/" className='a-usuario'>Hardcoded user</a>
-            </li>
-            <li>
-                <img src={props.fotouser} className="avatar-user" alt="userx" />
-                <a href="https://www.instagram.com/" className='a-usuario'>Hardcoded user</a>
-            </li>
-        </React.Fragment>
+        <div className='list-users'>
+            <ul className='ul-style'>
+                {array[0]}
+
+            </ul>
+        </div>
     );
 }
 

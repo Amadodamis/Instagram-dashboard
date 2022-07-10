@@ -8,20 +8,27 @@ let sig = " Siguiente >>"
 
 
 function dataAnalytics(props) {
+    const {fotoUser} = props;
+    console.log(fotoUser)
+    const usuario = <li >
+        <img src={fotoUser} className="avatar-user" alt="userx" />
+        <a href="https://www.instagram.com/" className='a-usuario'>Hardcoded user</a>
+    </li>
+
+    const arrayUsuariosHardCoded = [usuario, usuario, usuario, usuario, usuario, usuario, usuario, usuario, usuario, usuario, usuario]
+
+
     return (
 
         <section className="data-analitycs">
+
             <article className='article1'>
                 <div className='container-p'>
                     <p className='title'>Usuarios que seguis y no te siguen</p>
                 </div>
 
-                <div className='list-users'>
-                    <ul className='ul-style'>
-                        <HardcodedUsers fotouser={props.fotouser} />
-                    </ul>
+                <HardcodedUsers fotoUser={fotoUser} array={arrayUsuariosHardCoded} />
 
-                </div>
 
                 <div className='container-ant-sig'>
                     <button className='button-prev-next'> {ant} </button>
@@ -30,11 +37,21 @@ function dataAnalytics(props) {
 
             </article>
 
-            <article className='article2'>
+
+
+        </section>
+
+    );
+}
+
+export default dataAnalytics;
+
+/*
+<article className='article2'>
                 <p className='title'>Usuarios que no seguis y te siguen</p>
                 <div className='list-users'>
                     <ul className='ul-style'>
-                        <HardcodedUsers fotouser={props.fotouser} />
+                         <HardcodedUsers fotouser={props.fotouser} array={arrayUsuariosHardCoded}/>
                     </ul>
 
                 </div>
@@ -50,7 +67,7 @@ function dataAnalytics(props) {
                 <p className='title'>Usuarios que te dejaron de seguir desde la fecha : "*fecha*"</p>
                 <div className='list-users'>
                     <ul className='ul-style'>
-                        <HardcodedUsers fotouser={props.fotouser} />
+                    <HardcodedUsers fotouser={props.fotouser} array={arrayUsuariosHardCoded}/>
                     </ul>
 
                 </div>
@@ -61,9 +78,8 @@ function dataAnalytics(props) {
                 </div>
             </article>
 
-        </section>
 
-    );
-}
 
-export default dataAnalytics;
+
+
+*/

@@ -87,6 +87,9 @@
     color: white;
 }
 
+.hidden-p{
+display: hidden;
+}
 
 .ul-style {
     display: block;

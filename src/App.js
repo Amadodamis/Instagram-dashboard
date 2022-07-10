@@ -16,18 +16,15 @@ function App() {
   const toggleTheme = () => {
     setTheme((curr) => (curr === "light" ? "dark" : "light"))
   }
-
+ 
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }} >
       <div className="App-main" id={theme} >
         <Switch theme={theme} toggleTheme={toggleTheme} />
-        <Header />
-        <br />
-        <Body />
-        <br />
-        <Footer />
-        <br />
+        <Header /><br />
+        <Body /><br />
+        <Footer /><br />
       </div>
     </ThemeContext.Provider>
   );

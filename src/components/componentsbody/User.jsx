@@ -2,13 +2,13 @@ import React from 'react';
 import '../../css/body.css';
 
 
-function dataAnalytics(props) {
+function User(props) {
   return (
 
     <article className='container-info-user-article'>
 
       <div className='container-fotouser'>
-        <img src={props.fotouser} className="foto-user" alt="user" />
+        <img src={props.fotoUser} className="foto-user" alt="user" />
       </div>
 
       <div className='container-info-user'>
@@ -25,4 +25,4 @@ function dataAnalytics(props) {
   );
 }
 
-export default dataAnalytics;
+export default User;
