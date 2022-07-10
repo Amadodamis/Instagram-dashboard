@@ -18,7 +18,7 @@ function dataAnalytics(props) {
 
                 <div className='list-users'>
                     <ul className='ul-style'>
-                        <HardcodedUsers fotouser={props.fotouser}/>
+                        <HardcodedUsers fotouser={props.fotouser} />
                     </ul>
 
                 </div>
@@ -34,7 +34,7 @@ function dataAnalytics(props) {
                 <p className='title'>Usuarios que no seguis y te siguen</p>
                 <div className='list-users'>
                     <ul className='ul-style'>
-                    <HardcodedUsers fotouser={props.fotouser}/>
+                        <HardcodedUsers fotouser={props.fotouser} />
                     </ul>
 
                 </div>
@@ -50,7 +50,7 @@ function dataAnalytics(props) {
                 <p className='title'>Usuarios que te dejaron de seguir desde la fecha : "*fecha*"</p>
                 <div className='list-users'>
                     <ul className='ul-style'>
-                    <HardcodedUsers fotouser={props.fotouser}/>
+                        <HardcodedUsers fotouser={props.fotouser} />
                     </ul>
 
                 </div>

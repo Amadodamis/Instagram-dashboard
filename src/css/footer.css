@@ -1,21 +1,21 @@
-.footer{
-    border-top:1px solid #687780;
+.footer {
+    border-top: 1px solid #687780;
     border-bottom: 1px solid #687780;
 }
 
-.Links-footer{
+.Links-footer {
     text-decoration: none;
     margin: 0px;
     padding: 0px;
 }
 
-p{
+p {
     font-size: 12px;
     margin: 0px;
     margin-left: 5px;
-    
+
 }
 
-.container-links{
+.container-links {
     max-width: 10%;
 }

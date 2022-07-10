@@ -1,4 +1,4 @@
-.body {   
+.body {
     display: flex;
     justify-content: center;
     border-top: 1px solid #687780;
@@ -29,33 +29,33 @@
 }
 
 .form {
-width: 300px;
-height: 40px;
-display: flex;
+    width: 300px;
+    height: 40px;
+    display: flex;
 
 }
 
 .input-search {
-flex:1;
-border: none;
-outline:none;
+    flex: 1;
+    border: none;
+    outline: none;
 }
 
 
 .button-search {
-padding:0px 20px;
-border:none;
-outline:none;
-color:#fff;
-letter-spacing:1px;
-cursor:pointer;
+    padding: 0px 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
 }
 
 .title {
     font-size: 8px;
 }
 
-.Datos-user{
+.Datos-user {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
 }
@@ -79,8 +79,8 @@ cursor:pointer;
 }
 
 
-.a-usuario{
-    margin-left: 10px;   
+.a-usuario {
+    margin-left: 10px;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     text-decoration: none;
@@ -109,13 +109,13 @@ cursor:pointer;
     margin: 5px;
     height: 95%;
     border: 1px solid #687780;
-    
+
 }
 
-.container-ant-sig{
+.container-ant-sig {
     height: 7%;
     flex-grow: 1;
-    margin:0px;
+    margin: 0px;
 }
 
 .list-users {
@@ -123,17 +123,17 @@ cursor:pointer;
     height: 78%;
 }
 
-.container-p{
+.container-p {
     height: 15%;
 }
 
-.button-prev-next{
+.button-prev-next {
     width: 50%;
     height: 30px;
-    border:none;
-    outline:none;
-    color:#fff;
-    letter-spacing:1px; 
+    border: none;
+    outline: none;
+    color: #fff;
+    letter-spacing: 1px;
 }
 
 
@@ -169,6 +169,5 @@ cursor:pointer;
 .avatar-user {
     height: 30px;
     width: 30px;
-    border-radius:50%
+    border-radius: 50%
 }
-
