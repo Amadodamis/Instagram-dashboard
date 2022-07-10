@@ -3,25 +3,21 @@ import '../../css/App.css';
 import '../../css/body.css';
 
 function hardcodedUsers(props) {
-    /*
-    {array.map((user,i)=>{
-        return (
-            {user }   
-             )
-        })
-    }
-    
-    */
 
-
-    const { array, fotoUser } = props;
-    
-    console.log(array[0])
+    const {array} = props;
 
     return (
         <div className='list-users'>
             <ul className='ul-style'>
-                {array[0]}
+                {array.map((user, i) => {
+                    return (
+                        <li key={i} >
+                            {user.img}
+                            {user.a}
+                        </li>
+                    )
+                })
+                }
 
             </ul>
         </div>

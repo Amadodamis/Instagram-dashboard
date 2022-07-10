@@ -8,15 +8,14 @@ let sig = " Siguiente >>"
 
 
 function dataAnalytics(props) {
-    const {fotoUser} = props;
-    console.log(fotoUser)
-    const usuario = <li >
-        <img src={fotoUser} className="avatar-user" alt="userx" />
-        <a href="https://www.instagram.com/" className='a-usuario'>Hardcoded user</a>
-    </li>
+    const { fotoUser } = props;
 
-    const arrayUsuariosHardCoded = [usuario, usuario, usuario, usuario, usuario, usuario, usuario, usuario, usuario, usuario, usuario]
-
+    const usuario={
+        img:<img src={fotoUser} className="avatar-user" alt="userx" />,
+        a:<a href="https://www.instagram.com/" className='a-usuario'>Hardcoded user</a>
+    }
+    
+    const arrayUsuariosHardCoded=[usuario, usuario, usuario, usuario, usuario, usuario, usuario, usuario, usuario, usuario]
 
     return (
 
@@ -27,7 +26,7 @@ function dataAnalytics(props) {
                     <p className='title'>Usuarios que seguis y no te siguen</p>
                 </div>
 
-                <HardcodedUsers fotoUser={fotoUser} array={arrayUsuariosHardCoded} />
+                <HardcodedUsers array={arrayUsuariosHardCoded}  />
 
 
                 <div className='container-ant-sig'>
@@ -37,25 +36,9 @@ function dataAnalytics(props) {
 
             </article>
 
-
-
-        </section>
-
-    );
-}
-
-export default dataAnalytics;
-
-/*
-<article className='article2'>
+            <article className='article2'>
                 <p className='title'>Usuarios que no seguis y te siguen</p>
-                <div className='list-users'>
-                    <ul className='ul-style'>
-                         <HardcodedUsers fotouser={props.fotouser} array={arrayUsuariosHardCoded}/>
-                    </ul>
-
-                </div>
-
+                <HardcodedUsers array={arrayUsuariosHardCoded} />
                 <div className='container-angles'>
                     <button className='button-prev-next'> {ant} </button>
                     <button className='button-prev-next'> {sig} </button>
@@ -65,13 +48,7 @@ export default dataAnalytics;
 
             <article className='article3'>
                 <p className='title'>Usuarios que te dejaron de seguir desde la fecha : "*fecha*"</p>
-                <div className='list-users'>
-                    <ul className='ul-style'>
-                    <HardcodedUsers fotouser={props.fotouser} array={arrayUsuariosHardCoded}/>
-                    </ul>
-
-                </div>
-
+                <HardcodedUsers array={arrayUsuariosHardCoded} />
                 <div className='container-angles'>
                     <button className='button-prev-next'> {ant} </button>
                     <button className='button-prev-next'> {sig} </button>
@@ -79,7 +56,9 @@ export default dataAnalytics;
             </article>
 
 
+        </section>
 
+    );
+}
 
-
-*/
+export default dataAnalytics;
