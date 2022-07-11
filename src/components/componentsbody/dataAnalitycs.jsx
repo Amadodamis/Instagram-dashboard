@@ -1,64 +1,44 @@
 import React from 'react';
 import '../../css/body.css';
 import '../../css/App.css';
-import HardcodedUsers from './hardcodedUsers'
 
-let ant = "<< Anterior"
-let sig = " Siguiente >>"
+import DataAnalyticsArticle from './dataAnalitycsArticle';
 
+function DataAnalytics(props) {
 
-function dataAnalytics(props) {
+    const p1 = "Usuarios que seguis y no te siguen"
+    const p2 = "Usuarios que no seguis y te siguen"
+    const p3 = "Usuarios que te dejaron de seguir desde la *fecha*"
+   
+
+    //Array hardcodeado de Users
     const { fotoUser } = props;
 
-    const usuario={
-        img:<img src={fotoUser} className="avatar-user" alt="userx" />,
-        a:<a href="https://www.instagram.com/" className='a-usuario'>Hardcoded user</a>
+    const usuario = {
+        img: <img src={fotoUser} className="avatar-user" alt="userx" />,
+        a: <a href="https://www.instagram.com/" className='a-usuario'>Hardcoded user</a>
     }
-    
-    const arrayUsuariosHardCoded=[usuario, usuario, usuario, usuario, usuario, usuario, usuario, usuario, usuario, usuario]
+    const usuario2 = {
+        img: <img src={fotoUser} className="avatar-user" alt="userx" />,
+        a: <a href="https://www.instagram.com/" className='a-usuario'>Gerardo</a>
+    }
+    const arrayUsuariosHardCoded = [usuario, usuario2, usuario, usuario, usuario2, usuario, usuario, usuario2, usuario, usuario, usuario, usuario2, usuario, usuario2, usuario, usuario, usuario2, usuario2, usuario, usuario2, usuario, usuario2, usuario, usuario2,]
+
+
 
     return (
 
         <section className="data-analitycs">
 
-            <article className='article1'>
-                <div className='container-p'>
-                    <p className='title'>Usuarios que seguis y no te siguen</p>
-                </div>
+            <DataAnalyticsArticle arrayUsuariosHardCoded={arrayUsuariosHardCoded} fotoUser={fotoUser} p={p1}  />
 
-                <HardcodedUsers array={arrayUsuariosHardCoded}  />
+            <DataAnalyticsArticle arrayUsuariosHardCoded={arrayUsuariosHardCoded} fotoUser={fotoUser} p={p2} />
 
-
-                <div className='container-ant-sig'>
-                    <button className='button-prev-next'> {ant} </button>
-                    <button className='button-prev-next'> {sig} </button>
-                </div>
-
-            </article>
-
-            <article className='article2'>
-                <p className='title'>Usuarios que no seguis y te siguen</p>
-                <HardcodedUsers array={arrayUsuariosHardCoded} />
-                <div className='container-angles'>
-                    <button className='button-prev-next'> {ant} </button>
-                    <button className='button-prev-next'> {sig} </button>
-                </div>
-
-            </article>
-
-            <article className='article3'>
-                <p className='title'>Usuarios que te dejaron de seguir desde la fecha : "*fecha*"</p>
-                <HardcodedUsers array={arrayUsuariosHardCoded} />
-                <div className='container-angles'>
-                    <button className='button-prev-next'> {ant} </button>
-                    <button className='button-prev-next'> {sig} </button>
-                </div>
-            </article>
-
+            <DataAnalyticsArticle arrayUsuariosHardCoded={arrayUsuariosHardCoded} fotoUser={fotoUser} p={p3}  />
 
         </section>
 
     );
 }
 
-export default dataAnalytics;
+export default DataAnalytics;
