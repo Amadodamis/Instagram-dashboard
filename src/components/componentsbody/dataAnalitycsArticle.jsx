@@ -6,7 +6,11 @@ import ListaDiezUsuarios from './ListaDiezUsuarios'
 function DataAnalyticsArticle(props) {
     let ant = "<< Anterior"
     let sig = " Siguiente >>"
-    const { p } = props;
+    const { p ,leng} = props;
+    if(leng==="ENG"){
+        ant = "<< Previous"
+        sig = " Next >>"
+    }
 
 
     //paginado

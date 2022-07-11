@@ -6,9 +6,11 @@ import './css/App.css';
 import Header from "./components/header"
 import Footer from "./components/footer"
 import Body from "./components/body"
-import Switch from './components/SwitchComponent';
+import SwitchTheme from './components/SwitchComponentTheme';
+import SwitchLeng from './components/SwitchComponentLeng';
 
 export const ThemeContext = createContext(null)
+export const LanguageContext = createContext(null)
 
 function App() {
 
@@ -16,17 +18,28 @@ function App() {
   const toggleTheme = () => {
     setTheme((curr) => (curr === "light" ? "dark" : "light"))
   }
- 
+
+  const [leng, setLeng] = useState("ESP")
+  const toggleLeng = () => {
+    setLeng((curre) => (curre === "ENG" ? "ESP" : "ENG"))
+  }
 
   return (
+
+
     <ThemeContext.Provider value={{ theme, toggleTheme }} >
-      <div className="App-main" id={theme} >
-        <Switch theme={theme} toggleTheme={toggleTheme} />
-        <Header /><br />
-        <Body /><br />
-        <Footer /><br />
-      </div>
+      <LanguageContext.Provider value={{ leng, toggleLeng }} >
+        <div className="App-main" id={theme}  >
+          <SwitchTheme theme={theme} toggleTheme={toggleTheme} />
+          <SwitchLeng leng={leng} toggleLeng={toggleLeng} />
+          <Header />   <br />
+          <Body leng={leng} />     <br />
+          <Footer />   <br />
+        </div>
+      </LanguageContext.Provider>
     </ThemeContext.Provider>
+
+
   );
 }
 

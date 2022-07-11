@@ -8,12 +8,14 @@ import fotoUser from '../img/fotouser.png'
 import DataAnalitycs from './componentsbody/dataAnalitycs';
 import BuscarUser from './componentsbody/BuscarUser';
 
-function Body() {
+function Body(props) {
 
   return (
     <div className="body">
-      <BuscarUser fotoUser={fotoUser} />
-      <DataAnalitycs fotoUser={fotoUser} />
+
+      <BuscarUser fotoUser={fotoUser} leng={props.leng} />
+
+      <DataAnalitycs fotoUser={fotoUser} leng={props.leng} />
 
     </div>
   );

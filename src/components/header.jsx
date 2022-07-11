@@ -3,8 +3,8 @@ import logoIgBlack from '../img/instagram_logo_black.png'
 import '../css/header.css';
 import "../css/App.css"
 
-function Header(props) {
-
+function Header() {
+  
   return (
     <header className='style-header'>
       <div className='banner'>
