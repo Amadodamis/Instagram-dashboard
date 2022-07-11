@@ -2,21 +2,16 @@ import React, { useState } from "react";
 import '../../css/App.css';
 import '../../css/body.css';
 import ListaDiezUsuarios from './ListaDiezUsuarios'
+import ButtonPrevNext from "./ButtonPrevNext";
 
 function DataAnalyticsArticle(props) {
-    let ant = "<< Anterior"
-    let sig = " Siguiente >>"
-    const { p ,leng} = props;
-    if(leng==="ENG"){
-        ant = "<< Previous"
-        sig = " Next >>"
-    }
 
+    const { p, leng,arrayUsers} = props;
 
     //paginado
     const usersPorPagina = 10;
-    const [users, setUsers] = useState(props.arrayUsuariosHardCoded)
-    const [items, setItems] = useState([...props.arrayUsuariosHardCoded].splice(0, usersPorPagina))
+    const [users, setUsers] = useState(arrayUsers)
+    const [items, setItems] = useState([...arrayUsers].splice(0, usersPorPagina))
     const [currentPage, setCurrentPage] = useState(0)
 
     const nextHandler = () => {
@@ -54,11 +49,7 @@ function DataAnalyticsArticle(props) {
 
             <ListaDiezUsuarios arrayUsers={items} />
 
-            <div className='container-ant-sig'>
-                <button className='button-prev-next' onClick={prevHandler}> {ant} </button>
-                {/* {currentPage} */}
-                <button className='button-prev-next' onClick={nextHandler}> {sig} </button>
-            </div>
+            <ButtonPrevNext prevHandler={prevHandler} nextHandler={nextHandler} currentPage={currentPage} leng={leng} />
 
         </article>
     );

@@ -29,13 +29,17 @@ function App() {
 
     <ThemeContext.Provider value={{ theme, toggleTheme }} >
       <LanguageContext.Provider value={{ leng, toggleLeng }} >
+
         <div className="App-main" id={theme}  >
           <SwitchTheme theme={theme} toggleTheme={toggleTheme} />
           <SwitchLeng leng={leng} toggleLeng={toggleLeng} />
+
           <Header />   <br />
           <Body leng={leng} />     <br />
           <Footer />   <br />
+          
         </div>
+
       </LanguageContext.Provider>
     </ThemeContext.Provider>
 
