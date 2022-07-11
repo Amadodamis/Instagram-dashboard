@@ -9,7 +9,6 @@ function BuscarUser(props) {
     let p1="Buscar ID de usuario por Link"
     if (leng==="ENG"){ p1="Find User ID by Link"}
 
-    
 
     return (
         <section className="container-buscar-user">
