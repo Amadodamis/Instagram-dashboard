@@ -19,15 +19,17 @@ function SearchButton(props) {
 
         //Crea el objeto que va a ser pusheado en el UserID
         let newUser = {
-            newUserName: newUserName,
+            userName: newUserName,
             id: "1646135",
-            is_private: false,
+            is_private: "No",
             profile_pic_url_hd: fotoUser,
             follow: 4656,
             followed: 6544,
         }
+
         setUserId(newUser)
 
+        //para limpiar el input
         e.target.newUserName.value = ""
 
         //HardCoded de la lista de usuarios si el usuario se encontro

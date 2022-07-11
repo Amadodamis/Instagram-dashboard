@@ -21,7 +21,7 @@ function BuscarUser(props) {
             listUsers={listUsers} setListUsers={setListUsers}
             /> 
 
-            <User userId={userId} fotoUser={fotoUser} leng={leng} />
+            <User userId={userId} leng={leng} />
 
         </section>
 

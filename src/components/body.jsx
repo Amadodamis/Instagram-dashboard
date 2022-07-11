@@ -19,8 +19,8 @@ function Body(props) {
     <div className="body">
 
       <BuscarUser leng={props.leng} 
-       setUserId={setUserId} 
-       setListUsers={setListUsers} 
+       setUserId={setUserId} userId={userId}
+       setListUsers={setListUsers} listUsers={listUsers}
       />
 
       <DataAnalitycs fotoUser={fotoUser} leng={props.leng} arrayUsers={arrayUsuariosHardCoded} />
